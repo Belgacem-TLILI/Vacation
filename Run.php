@@ -10,7 +10,7 @@ class Run
 
     public static function export($currentYear)
     {
-        $fp = fopen('data.csv', 'w');
+        $fp = fopen('data/'.$currentYear. '_data.csv', 'w');
         foreach (self::getEmployeesData() as $employeeData) {
             $contract = new Contract($employeeData[2], $employeeData[3]);
             $employee = new Employee($employeeData[0], $employeeData[1], $contract);
