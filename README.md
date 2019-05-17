@@ -28,7 +28,7 @@ $ php -r 'include "Run.php"; Run::export(2006);'
 
 This will generate a CSV file inside the data folder with the year name, you can try different years, just change 2006 by your desired year
 
-To un the unit test you can just run
+To run the unit tests you can just run
 ```
 $ phpunit
 ```
